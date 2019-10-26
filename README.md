@@ -12,13 +12,18 @@ During this talk, Ryan will discuss his firsthand account of Excel Hell and how 
 
 Slides :
 [Intro](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EYM8GQ-03yRItwSIDVFtD4gBnw1s3YrdaI339xGhcm7o8g?e=jAQxqP)
+
 [Excel to Python](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EU7qDGbIu1BDuiWf4CVNJ6EBL8gi2cRrgzftxBiHe0S-kg?e=4Dg6dg)
+
 [Python + Data ]()
 
 Examples:
 [Webscraping]()
+
 [Data Analysis]()
+
 [Data Viz]()
+
 [Data Automation]()
 
 
