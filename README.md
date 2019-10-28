@@ -16,7 +16,7 @@ Slides :
 
 [Excel to Python](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EfZc2NJYryhDsyaqFdSrN9UBNEqyTY9tUqd5b4c3sABprQ?e=TH17We)
 
-[Python Packages]()
+[Python Packages](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EdXZeyVGz7VFvZu6zCbEfw8BNUYPhT6SDejGtfw8I1_z1Q?e=xeQTL6)
 
 [Data Management ]()
 
