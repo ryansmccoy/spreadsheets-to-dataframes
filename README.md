@@ -12,11 +12,13 @@ During this talk, Ryan will discuss his firsthand account of Excel Hell and how 
 
 Slides :
 
-[Intro](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EYM8GQ-03yRItwSIDVFtD4gBnw1s3YrdaI339xGhcm7o8g?e=jAQxqP)
+[Intro](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/Ed80otUOcyZIjnb3_wexK4gBal7c5NmQzUYX2MBaJbbYXg?e=sxgRbz)
 
-[Excel to Python](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EU7qDGbIu1BDuiWf4CVNJ6EBL8gi2cRrgzftxBiHe0S-kg?e=4Dg6dg)
+[Excel to Python](https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EfZc2NJYryhDsyaqFdSrN9UBNEqyTY9tUqd5b4c3sABprQ?e=TH17We)
 
-[Python + Data ]()
+[Python Packages]()
+
+[Data Management ]()
 
 Examples:
 
