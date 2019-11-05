@@ -7,11 +7,6 @@ from bs4 import BeautifulSoup
 import configparser
 
 
-config = configparser.ConfigParser()
-config.read(r'C:\Projects\@Scripts\CONFIG\web_html_pdf_zip.cfg')
-URL_REPLACE = config['Settings']['URL_REPLACE']
-URL_WEBSITE = config['Settings']['URL_WEBSITE']
-
 def create_filenames_for_conversion(filepath, filename, file_extention):
     print(filepath, filename)
     timestr = time.strftime("%Y%m%d-%H%M%S",time.localtime(os.path.getmtime(os.path.join(filepath, filename))))
@@ -43,7 +38,7 @@ def create_file(filename, w_page_source, URL_WEBSITE):
     ab = d.make_links_absolute(URL_WEBSITE)
     soup = BeautifulSoup(ab.html(), "html.parser")
     try:
-        with open(filename, "w", encoding='utf-8') as f: 
+        with open(filename, "w", encoding='utf-8') as f:
             f.write(str(soup.decode_contents))
     except:
         print('something broke: ', filename)

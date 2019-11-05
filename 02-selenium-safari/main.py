@@ -1,7 +1,7 @@
 
 
 import os
-import selenium 
+import selenium
 from selenium import webdriver
 import create_names
 from create_names import create_folder_path_from_url, create_filename_from_url, create_file
@@ -14,16 +14,6 @@ import random
 import process_html_remove_junk
 import html_to_pdf
 
-
-import configparser
-config = configparser.ConfigParser()
-config.read(r'/media/share/PROJECTS/@Scripts/CONFIG/web_html_pdf_zip.cfg')
-INPUT_FILE = config['Settings']['INPUT_FILE']
-USERNAME = config['Settings']['USERNAME']
-PASSWORD = config['Settings']['PASSWORD']
-URL_WEBSITE = config['Settings']['URL_WEBSITE']
-URL_LOGIN = config['Settings']['URL_LOGIN']
-BASE_DIR = config['Settings']['BASE_DIR']
 
 def file_merge(directory):
     for path, dirnames, files in os.walk(directory):
@@ -100,9 +90,9 @@ def main():
 
 
 
-            
 
-        
+
+
 
 
 if __name__ == '__main__':

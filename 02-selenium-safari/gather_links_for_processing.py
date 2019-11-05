@@ -1,21 +1,14 @@
 from bs4 import BeautifulSoup
 import configparser
-import time 
+import time
 from create_names import create_file
 #sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 import urllib.parse
 import lxml
 import lxml.html
 from lxml.html import parse, tostring, open_in_browser, fromstring
-config = configparser.ConfigParser()
-config.read(r'C:\Projects\@Scripts\CONFIG\web_html_pdf_zip.cfg')
-INPUT_FILE = config['Settings']['INPUT_FILE']
-USERNAME = config['Settings']['USERNAME']
-PASSWORD = config['Settings']['PASSWORD']
-URL_WEBSITE = config['Settings']['URL_WEBSITE']
-URL_LOGIN = config['Settings']['URL_LOGIN']
 
-#   filename = C:\HTML\scientific-computing-with_9781786463517\scientific-computing-with9781786463517(t).html
+
 def get_toc_links(filename, w_page_source, URL_WEBSITE,toc_xpath=None):
     create_file(filename, w_page_source, URL_WEBSITE)
     html = lxml.html.fromstring(w_page_source)

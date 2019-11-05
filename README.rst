@@ -21,22 +21,16 @@ During this talk, Ryan will discuss his firsthand account of Excel Hell and how 
 
 `Data Management [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EX91EofZ7w9JunZvZ4wmZ8EBTWT5ztaRepBkooGdX0CohQ?e=q2B770>`_
 
-example_.
-
-.. _example:
-
 
 `01-basics.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/01-basics.ipynb>`_
+
 `02-webscraping.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/02-webscraping.ipynb>`_
+
 `03-tidy-data.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/03-tidy-data.ipynb>`_
+
 `04-pandas.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/04-pandas.ipynb>`_
 `05-data-analysis.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/05-data-analysis.ipynb>`_
 `06-data-visualizations.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/06-data-visualizations.ipynb>`_
-
-[Data Analysis]()
-
-[Data Viz]()
-
 
 # Quick Start Guides
 
