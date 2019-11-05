@@ -68,6 +68,15 @@ Setup Environment & Run Example (Linux):
     $ conda install -c conda-forge fbprophet
     $ pip install -r requirements_dev.txt
 
+
+If have installing any of the packages on Windows:
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+^ download it from here and then pip install the downloaded file:
+
+    https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyflux
+
+
 * Free software: MIT license
 
 Credits
