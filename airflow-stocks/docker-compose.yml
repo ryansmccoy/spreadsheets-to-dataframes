@@ -1,0 +1,80 @@
+version: '2'
+services:
+    redis:
+        image: redis:3.2.7
+        ports:
+            - "6379:6379"
+
+    postgres:
+        image: postgres:9.6
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+        volumes:
+            - ./database:/docker-entrypoint-initdb.d/
+            - airflow-postgresql:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+
+    webserver:
+        image: puckel/docker-airflow:1.10.4
+        restart: always
+        depends_on:
+            - postgres
+        environment:
+            - LOAD_EX=n
+            - EXECUTOR=Local
+            - AIRFLOW__CORE__FERNET_KEY=0vHcJy8XSmhbz8EbUzFIkCF1ggEuffTvqR-nuB9fv9U=
+            - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgres://airflow:airflow@localhost:5432/airflow
+        volumes:
+            - ./dags:/usr/local/airflow/dags
+        ports:
+            - "8080:8080"
+        command: webserver
+
+    flower:
+        image: puckel/docker-airflow:1.10.4
+        restart: always
+        depends_on:
+            - redis
+        environment:
+            - EXECUTOR=Celery
+        ports:
+            - "5555:5555"
+        command: flower
+
+    scheduler:
+        image: puckel/docker-airflow:1.10.4
+        restart: always
+        depends_on:
+            - webserver
+        volumes:
+            - ./dags:/usr/local/airflow/dags
+        environment:
+            - LOAD_EX=n
+            - FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
+            - EXECUTOR=Celery
+            # - POSTGRES_USER=airflow
+            # - POSTGRES_PASSWORD=airflow
+            # - POSTGRES_DB=airflow
+        command: scheduler
+
+    worker:
+        image: puckel/docker-airflow:1.8.2
+        restart: always
+        depends_on:
+            - scheduler
+        volumes:
+            - ./dags:/usr/local/airflow/dags
+        environment:
+            - FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
+            - EXECUTOR=Celery
+            # - POSTGRES_USER=airflow
+            # - POSTGRES_PASSWORD=airflow
+            # - POSTGRES_DB=airflow
+        command: worker
+
+volumes:
+    airflow-postgresql:
+        external: true

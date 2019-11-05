@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	404
+{% endblock %}
+
+{% block content %}
+	<h1>404 - Seite nicht gefunden</h1>
+	<br /><br />
+	<p>Diese Seite gibt es nicht. Kann es vielleicht sein, dass du dich vertippt hast?</p>
+	<p>Oder hat dir irgendjemand einen falschen Link gegeben?! :o Wenn ja, darfst du ihn gerne eine verpassen!</p>
+	<br /><hr><br>
+	<h2>Featured Websites</h2>
+	<ul>
+		{% for key, value in featured.items() %}
+			<li>{{ key }}: <a href="{{ value }}">Zum Feed</a></li>
+		{% endfor %}
+		<!--<li>All-Craft: <a href="/reader/www.all-craft.de/feed/">Zum Feed</a></li>
+		<li>Crap-App ~ Blog: <a href="/reader/blog.crap-app.de/feed/">Zum Feed</a></li>-->
+	</ul>
+	
+{% endblock %}

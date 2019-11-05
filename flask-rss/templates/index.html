@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+
+	<h1>Flask-RSS</h1>
+	<p class="lead">RSS Reader</p>
+	<br /><br /><br />
+	<h2>Feeds</h2>
+	<ul>
+		{% for key, value in featured.items() %}
+			<li>{{ key }}: <a href="{{ url_for('readerPage') }}" id="prweb">View Feed</a></li>
+		{% endfor %}
+	</ul>
+	<br>
+
+{% endblock %}

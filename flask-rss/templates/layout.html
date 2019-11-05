@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %} ~ RssReader</title>
+    <meta charset="utf-8">
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block header %}{% endblock %}
+</head>
+
+<body>
+<div class="container-fluid">
+    {% block content %}{% endblock %}
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted"><span class="left"><a href="/">Home</a> &Xi; <a href="/reader/">RSS Reader</a></span><span class="right">&copy; Ryan S. McCoy 2019</span></p>
+    </div>
+</footer>
+</body>
+
+</html>
