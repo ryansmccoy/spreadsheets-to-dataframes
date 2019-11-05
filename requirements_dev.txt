@@ -13,6 +13,6 @@ celery
 bs4
 selenium
 
-statsmodel
+statsmodels
 tldextract
 pyflux
