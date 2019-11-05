@@ -8,8 +8,7 @@ cookiecutter
 sqlalchemy
 flask
 
-pika
-celery
+
 bs4
 selenium
 
