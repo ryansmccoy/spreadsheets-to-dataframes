@@ -1,5 +1,5 @@
 =======================================================================================
-From Spreadsheets to DataFrames: Escaping Excel Hell with Python (Work in Progress)
+From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 =======================================================================================
 
 
