@@ -27,4 +27,5 @@ try:
     channel.start_consuming()
 except KeyboardInterrupt:
     channel.stop_consuming()
+
 connection.close()

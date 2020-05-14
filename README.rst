@@ -51,7 +51,7 @@ Setup Environment & Run Example  (Windows):
 
     $ git clone https://github.com/ryansmccoy/spreadsheets-to-dataframes.git
     $ cd spreadsheets-to-dataframes
-    $ conda create -n spreadsheets-to-dataframes python=3.7 pandas scipy numpy lxml jupyter matplotlib -y
+    $ conda create -n spreadsheets-to-dataframes python=3.8 pandas scipy numpy lxml jupyter matplotlib fbprophet -c conda-forge -y
     $ activate spreadsheets-to-dataframes
     $ conda install -c conda-forge fbprophet
     $ pip install -r requirements_dev.txt
@@ -63,7 +63,7 @@ Setup Environment & Run Example (Linux):
 
     $ git clone https://github.com/ryansmccoy/spreadsheets-to-dataframes.git
     $ cd spreadsheets-to-dataframes
-    $ conda create -n spreadsheets-to-dataframes python=3.7 pandas scipy numpy lxml jupyter matplotlib -y
+    $ conda create -n spreadsheets-to-dataframes python=3.8 pandas scipy numpy lxml jupyter matplotlib fbprophet -c conda-forge -y
     $ source activate spreadsheets-to-dataframes
     $ conda install -c conda-forge fbprophet
     $ pip install -r requirements_dev.txt
@@ -80,6 +80,7 @@ Navigate to directory:
 If have installing any of the packages on Windows:
 
 https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
 ^ download it from here and then pip install the downloaded file:
 
     https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyflux
