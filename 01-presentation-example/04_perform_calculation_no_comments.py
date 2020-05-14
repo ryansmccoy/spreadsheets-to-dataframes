@@ -4,31 +4,16 @@ from datetime import datetime
 
 filename = r'data\WMT_US.csv'
 
-records = []
-
 with open(filename, 'r') as f:
     rows = csv.reader(f)
-
-    # skip header row
     header = next(f)
 
     for row in rows:
-        # print(row)
-        # ['WMT US', 'WAL-MART STORES INC', '12/31/2014', '476293988352', '460271988736']
+        row_date_year = datetime.strptime(row[2], "%m/%d/%Y").year
 
-        # convert string to date object
-        row_date = datetime.strptime(row[2], "%m/%d/%Y")
-        # print(row_date)
-        # 2003-12-31 00:00:00
-        # gives us ability to ask for year
-        row_date_year = row_date.year
-
-        # need to convert sales and expenses values from string to integer
-        # so can perform mathmatical operations
         row_sales = int(row[3])
         row_expenses = int(row[4])
 
-        # perform profit calculation
         profit = row_sales - row_expenses
 
         print(f"{row_date_year} Profit = {profit:,}")

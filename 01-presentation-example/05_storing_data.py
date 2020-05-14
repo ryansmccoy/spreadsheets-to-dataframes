@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 from pprint import pprint
 
-filename = r'00-data\WMT_US.csv'
+filename = r'data\WMT_US.csv'
 
 records = []
 

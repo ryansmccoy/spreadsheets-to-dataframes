@@ -6,10 +6,11 @@ pd.set_option('display.max_columns', 100)
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.width', 600)
 
-filename = r'00-data\WMT_US.csv'
+filename = r'data\WMT_US.csv'
 
 df = pd.read_csv(filename)
 
+# check the data types of each columns
 print(df.dtypes)
 
 """
@@ -21,27 +22,80 @@ Total Expenses     int64
 dtype: object
 """
 
+# convert the date column to python date object
+# which makes it easier to work with
 df['Year End'] = pd.to_datetime(df['Year End'])
 
-print(df.dtypes)
-
+# print(df.dtypes)
 """
-Ticker            object
-Company Name      object
-Year End          object
-Total Sales        int64
-Total Expenses     int64
+Ticker                    object
+Company Name              object
+Year End          datetime64[ns]
+Total Sales                int64
+Total Expenses             int64
 dtype: object
+
 """
 
+# calculate total profit
 df['Total Profit'] = df['Total Sales'] - df['Total Expenses']
+
+# print(df)
+"""
+    Ticker         Company Name   Year End   Total Sales  Total Expenses  Total Profit
+0   WMT US  WAL-MART STORES INC 2014-12-31  476293988352    460271988736   16021999616
+1   WMT US  WAL-MART STORES INC 2013-12-31  469162000384    452163000320   16999000064
+2   WMT US  WAL-MART STORES INC 2012-12-31  446950014976    431251014656   15699000320
+3   WMT US  WAL-MART STORES INC 2011-12-31  421849006080    405460005888   16389000192
+4   WMT US  WAL-MART STORES INC 2010-12-31  408214011904    393879012352   14334999552
+5   WMT US  WAL-MART STORES INC 2009-12-31  405606989824    392206989312   13400000512
+6   WMT US  WAL-MART STORES INC 2008-12-31  378798997504    366067997696   12730999808
+7   WMT US  WAL-MART STORES INC 2007-12-31  348650012672    337366012928   11283999744
+8   WMT US  WAL-MART STORES INC 2006-12-31  312426987520    301195987968   11230999552
+9   WMT US  WAL-MART STORES INC 2005-12-31  287989006336    277722006528   10266999808
+10  WMT US  WAL-MART STORES INC 2004-12-31  256329007104    247275006976    9054000128
+11  WMT US  WAL-MART STORES INC 2003-12-31  229615992832    221660993024    7954999808
+"""
 
 df['Profit Margin'] = (df['Total Profit'] / df['Total Sales']) * 100
 
+# print(df)
+"""
+    Ticker         Company Name   Year End   Total Sales  Total Expenses  Total Profit  Profit Margin
+0   WMT US  WAL-MART STORES INC 2014-12-31  476293988352    460271988736   16021999616        3.36389
+1   WMT US  WAL-MART STORES INC 2013-12-31  469162000384    452163000320   16999000064        3.62327
+2   WMT US  WAL-MART STORES INC 2012-12-31  446950014976    431251014656   15699000320        3.51247
+3   WMT US  WAL-MART STORES INC 2011-12-31  421849006080    405460005888   16389000192        3.88504
+4   WMT US  WAL-MART STORES INC 2010-12-31  408214011904    393879012352   14334999552        3.51164
+5   WMT US  WAL-MART STORES INC 2009-12-31  405606989824    392206989312   13400000512        3.30369
+6   WMT US  WAL-MART STORES INC 2008-12-31  378798997504    366067997696   12730999808        3.36089
+7   WMT US  WAL-MART STORES INC 2007-12-31  348650012672    337366012928   11283999744        3.23648
+8   WMT US  WAL-MART STORES INC 2006-12-31  312426987520    301195987968   11230999552        3.59476
+9   WMT US  WAL-MART STORES INC 2005-12-31  287989006336    277722006528   10266999808        3.56507
+10  WMT US  WAL-MART STORES INC 2004-12-31  256329007104    247275006976    9054000128        3.53218
+11  WMT US  WAL-MART STORES INC 2003-12-31  229615992832    221660993024    7954999808        3.46448
+"""
+
 # percent change needs to be ascending dates
 df.sort_values("Year End", inplace=True)
-
 df['Sales Growth YoY %'] = df['Total Sales'].pct_change() * 100
+
+# print(df)
+"""
+    Ticker         Company Name   Year End   Total Sales  Total Expenses  Total Profit  Profit Margin  Sales Growth YoY %
+11  WMT US  WAL-MART STORES INC 2003-12-31  229615992832    221660993024    7954999808        3.46448                 nan
+10  WMT US  WAL-MART STORES INC 2004-12-31  256329007104    247275006976    9054000128        3.53218            11.63378
+9   WMT US  WAL-MART STORES INC 2005-12-31  287989006336    277722006528   10266999808        3.56507            12.35131
+8   WMT US  WAL-MART STORES INC 2006-12-31  312426987520    301195987968   11230999552        3.59476             8.48573
+7   WMT US  WAL-MART STORES INC 2007-12-31  348650012672    337366012928   11283999744        3.23648            11.59408
+6   WMT US  WAL-MART STORES INC 2008-12-31  378798997504    366067997696   12730999808        3.36089             8.64735
+5   WMT US  WAL-MART STORES INC 2009-12-31  405606989824    392206989312   13400000512        3.30369             7.07710
+4   WMT US  WAL-MART STORES INC 2010-12-31  408214011904    393879012352   14334999552        3.51164             0.64275
+3   WMT US  WAL-MART STORES INC 2011-12-31  421849006080    405460005888   16389000192        3.88504             3.34016
+2   WMT US  WAL-MART STORES INC 2012-12-31  446950014976    431251014656   15699000320        3.51247             5.95024
+1   WMT US  WAL-MART STORES INC 2013-12-31  469162000384    452163000320   16999000064        3.62327             4.96968
+0   WMT US  WAL-MART STORES INC 2014-12-31  476293988352    460271988736   16021999616        3.36389             1.52015
+"""
 
 new_filename = filename.replace(".csv", "_pandas.csv")
 
