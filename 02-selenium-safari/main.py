@@ -54,7 +54,9 @@ def main():
     '''
     if len(sys.argv) < 2:
             sys.exit(0)
+
     w = webdriver.Chrome()
+
     domain_url, base_login = URL_WEBSITE, URL_LOGIN
     w.get(domain_url + base_login)
     loginElem = w.find_element_by_name('email')
@@ -67,6 +69,7 @@ def main():
 
 
     urls = grab_urls_from_file(INPUT_FILE)
+
     for url in urls:
         w.get(url)
         base_dir = os.path.abspath(os.sep)

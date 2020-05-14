@@ -68,6 +68,14 @@ Setup Environment & Run Example (Linux):
     $ conda install -c conda-forge fbprophet
     $ pip install -r requirements_dev.txt
 
+Running Jupyter Notebooks:
+
+Navigate to directory:
+
+.. code-block:: bash
+
+    $ activate spreadsheets-to-dataframes
+    $ jupyter notebook
 
 If have installing any of the packages on Windows:
 
@@ -79,10 +87,4 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 * Free software: MIT license
 
-Credits
--------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

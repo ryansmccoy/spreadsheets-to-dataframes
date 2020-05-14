@@ -1,17 +1,19 @@
-pip==19.2.3
 Click==7.0
 
 pandas
+numpy
+scipy
 requests
 openpyxl
 cookiecutter
 sqlalchemy
 flask
 
-
 bs4
 selenium
 
 statsmodels
 tldextract
-pyflux
+# pyflux
+
+celery
