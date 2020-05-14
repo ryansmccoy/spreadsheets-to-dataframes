@@ -40,6 +40,17 @@ Code
 
 `06-data-visualizations.ipynb <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/06-data-visualizations.ipynb>`_
 
+Folders
+===================================================
+
+* 01-presentation-example  - examples used in presentation
+* 02-selenium-examples - program that clicks through a calendar (written in javascript) and exports csv files
+* 02-selenium-safari - program that logins to website, scrapes html from javascript generated page, cleans html, and exports to pdf files
+* 02-webscrape-celery - example of that uses a message queue, and celery to download list of urls
+* 04-other-analysis - examples of different quantitative notebooks
+* 05-other-visualizations - examples of different data visualization tools
+* 06-flask - different flask examples
+* 07-airflow - example that uses airflow to download and store stock prices
 
 # Quick Start Guides
 ======================
@@ -84,7 +95,6 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/
 ^ download it from here and then pip install the downloaded file:
 
     https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyflux
-
 
 * Free software: MIT license
 

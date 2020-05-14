@@ -14,12 +14,11 @@ selenium
 
 statsmodels
 tldextract
-pyflux
+# pyflux
 fbprophet
 lxml
 jupyter
-numpy
 pandas
 matplotlib
 
-celery
+celery==3.1.25

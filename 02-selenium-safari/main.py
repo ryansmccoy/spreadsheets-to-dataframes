@@ -25,9 +25,7 @@ def post_process():
     zip_directory(BASE_DIR)
 
 def pause_for_random_time():
-    timed = time.sleep(random.randint(3,7))
-    print(timed)
-    timed
+    time.sleep(random.randint(3,7))
 
 def process_html_files(directory=None):
     files_processed = process_html_remove_junk.process_html_files_removing_junk(directory)
@@ -66,7 +64,6 @@ def main():
     time.sleep(3)
     loginPass.submit()
     time.sleep(3)
-
 
     urls = grab_urls_from_file(INPUT_FILE)
 
