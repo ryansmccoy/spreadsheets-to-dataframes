@@ -17,13 +17,13 @@ Slides
 ======================
 
 
-`Intro [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/Ed80otUOcyZIjnb3_wexK4gBal7c5NmQzUYX2MBaJbbYXg?e=sxgRbz>`_
+`Intro [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_mccoystl_com/Ed80otUOcyZIjnb3_wexK4gBal7c5NmQzUYX2MBaJbbYXg?e=sxgRbz>`_
 
-`Excel to Python [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EfZc2NJYryhDsyaqFdSrN9UBNEqyTY9tUqd5b4c3sABprQ?e=TH17We>`_
+`Excel to Python [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_mccoystl_com/EfZc2NJYryhDsyaqFdSrN9UBNEqyTY9tUqd5b4c3sABprQ?e=TH17We>`_
 
-`Python Libraries & Resources [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EdXZeyVGz7VFvZu6zCbEfw8BNUYPhT6SDejGtfw8I1_z1Q?e=xeQTL6>`_
+`Python Libraries & Resources [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_mccoystl_com/EdXZeyVGz7VFvZu6zCbEfw8BNUYPhT6SDejGtfw8I1_z1Q?e=xeQTL6>`_
 
-`Data Management [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_gotem_co/EX91EofZ7w9JunZvZ4wmZ8EBTWT5ztaRepBkooGdX0CohQ?e=q2B770>`_
+`Data Management [Slides] <https://gotemstl-my.sharepoint.com/:p:/g/personal/ryan_mccoystl_com/EX91EofZ7w9JunZvZ4wmZ8EBTWT5ztaRepBkooGdX0CohQ?e=q2B770>`_
 
 Code
 ======================
