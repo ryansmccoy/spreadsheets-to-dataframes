@@ -5,6 +5,8 @@ From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 
 `Presentation given at [STL Python] <https://www.meetup.com/STL-Python/events/265283397>`_
 
+`Presentation given at Chicago Python Users Group [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
+
 Details
 
 A spreadsheet is a wonderful invention and an excellent tool for certain jobs. All too often, however, spreadsheets are called upon to perform tasks that are beyond their capabilities. It's like the old saying, 'If the only tool you have is a hammer, every problem looks like a nail.' But some problems are better addressed with a screwdriver, with glue, or with a swiss army knife.
