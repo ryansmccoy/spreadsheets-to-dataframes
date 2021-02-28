@@ -9,11 +9,17 @@ From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 
 Details
 
-A spreadsheet is a wonderful invention and an excellent tool for certain jobs. All too often, however, spreadsheets are called upon to perform tasks that are beyond their capabilities. It's like the old saying, 'If the only tool you have is a hammer, every problem looks like a nail.' But some problems are better addressed with a screwdriver, with glue, or with a swiss army knife.
+A spreadsheet is a wonderful invention and an excellent tool for certain jobs. All too often, however, spreadsheets are called upon to perform tasks that are beyond their capabilities. It’s like the old saying, 'If the only tool you have is a hammer, every problem looks like a nail.' However, some problems are better addressed with a screwdriver, with glue, or with a Swiss Army Knife.
 
-Python is often called the Swiss army knife of the programming world, due to its versatility and flexibility in use. That's why it has become increasingly popular over time. Companies can adopt Python to perform some uniquely complex processes over the long-term.
+Python is described by some in the programming world as the Swiss Army Knife of programming languages because of its unrivaled versatility and flexibility in use. This allows its users to solve complex problems relatively easily compared with other programming languages and is one of the reasons why Python has become increasingly popular over time.
 
-During this talk, Ryan will discuss his firsthand account of Excel Hell and how he managed to escape it using Python. He will also discuss some of the relevant libraries he uses for web scraping, data processing, analysis, and visualization, including Requests, Pandas, Flask, and Airflow, as well as few strategies he uses when approaching problems with data.
+In this tutorial, we’ll briefly discuss spreadsheets, signs that you might be living in “Excel Hell”, and then we’ll spend the rest of the time learning how to escape it using Python.
+
+In the first section, we’ll extend on what spreadsheet users already know about cells, rows, columns, and formulas, and map them to their Python equivalent, such as variables, lists, dictionaries, and functions. At the end of this section, we’ll do an interactive exercise and learn how we can perform a simple calculation, similar to one you might do in Excel, but instead using Python.
+
+In the second section, we’ll discuss (and attempt) how we can perform more complex tasks including web scraping, data processing, analysis, and visualization, by utilizing a few popular 3rd party libraries used including Requests, Pandas, Flask, Matplotlib, and others.
+
+In the last section, we’ll round out our discussion with a few important concepts in data management, including concept of tidy data, building a data pipeline, and a few strategies (and packages) to use when approaching various data problems, including demo using Apache Airflow.
 
 Slides
 ======================
