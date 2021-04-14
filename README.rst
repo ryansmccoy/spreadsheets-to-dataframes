@@ -5,7 +5,7 @@ From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 
 `Presentation given at [STL Python] <https://www.meetup.com/STL-Python/events/265283397>`_
 
-`Video Presentation given at Chicago Python Users Group (Short Version) [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
+`Video Presentation (Short Version) given at Chicago Python Users Group [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
 
 Details
 
