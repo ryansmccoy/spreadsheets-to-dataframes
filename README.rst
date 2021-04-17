@@ -3,9 +3,15 @@ From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 =======================================================================================
 
 
+*** I'm making changes for upcomming Pycon Tutorial, so check back on 5/12/2021***
+==============================================================================================================================================================================
+
 `Presentation given at [STL Python] <https://www.meetup.com/STL-Python/events/265283397>`_
 
 `Video Presentation (Short Version) given at Chicago Python Users Group [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
+
+Video Presentation given at Pycon 2021 - May 12, 2021
+
 
 Details
 
