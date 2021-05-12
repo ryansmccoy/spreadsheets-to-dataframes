@@ -145,19 +145,25 @@ https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
 Python Books & Videos:
 ===================================================
 
-`Python Crash Course, 2nd Edition <https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280>`_
+`(Book) Python Crash Course, 2nd Edition <https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280>`_
 
-`Introducing Python: Modern Computing in Simple Packages <https://www.amazon.com/Introducing-Python-Modern-Computing-Packages-ebook/dp/B0815R5543>`_
+`(Book) Introducing Python: Modern Computing in Simple Packages <https://www.amazon.com/Introducing-Python-Modern-Computing-Packages-ebook/dp/B0815R5543>`_
 
-`Learning Python, 5th Edition <https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730>`_
+`(Book) Learning Python, 5th Edition <https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730>`_
 
-`Automate the Boring Stuff with Python, 2nd Edition: Practical Programming for Total Beginners <https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922>`_
+`(Book) Automate the Boring Stuff with Python, 2nd Edition: Practical Programming for Total Beginners <https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922>`_
 
-`Think Python: How to Think Like a Computer Scientist <https://www.amazon.com/Think-Python-Like-Computer-Scientist-ebook/dp/B018UXJ9EQ>`_
+`(Book) Think Python: How to Think Like a Computer Scientist <https://www.amazon.com/Think-Python-Like-Computer-Scientist-ebook/dp/B018UXJ9EQ>`_
 
-`The Quick Python Book <https://www.amazon.com/Quick-Python-Book-Naomi-Ceder/dp/1617294039>`_
+`(Book) The Quick Python Book (Book) <https://www.amazon.com/Quick-Python-Book-Naomi-Ceder/dp/1617294039>`_
 
-`Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More  <https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability/dp/1593278780>`_
+`(Book) Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More  <https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability/dp/1593278780>`_
+
+`(Github) A Whirlwind Tour of Python  <https://github.com/jakevdp/WhirlwindTourOfPython>`_
+
+`(Github) Python Data Science Handbook  <https://github.com/jakevdp/PythonDataScienceHandbook>`_
+
+`(Github) Introduction to Python <https://github.com/ipeirotis/introduction-to-python>`_
 
 Cookiecutter:
 ===================================================
