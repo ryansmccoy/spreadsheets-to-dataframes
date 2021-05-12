@@ -1,4 +1,4 @@
-Click==7.0
+Click
 
 pandas
 numpy
@@ -10,15 +10,16 @@ sqlalchemy
 flask
 
 bs4
-selenium
+# selenium
 
-statsmodels
-tldextract
+# statsmodels
+# tldextract
 # pyflux
-fbprophet
+# fbprophet
 lxml
 jupyter
-pandas
 matplotlib
 
-celery==3.1.25
+# celery==3.1.25
+
+# alpha_vantage
