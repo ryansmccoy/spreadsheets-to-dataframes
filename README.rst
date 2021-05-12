@@ -243,7 +243,7 @@ Have you mastered Matplotlilb?  Then you should checkout Javascript, D3, React, 
 Flask:
 ===================================================
 
-# pip install flask
+$ pip install flask
 
 Resources:
 
