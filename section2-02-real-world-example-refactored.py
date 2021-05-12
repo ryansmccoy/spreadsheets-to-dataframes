@@ -68,10 +68,15 @@ def download_filings(start_year, end_year, output_directory):
 
                     r = requests.get(url)
 
-                    print(f"Download Complete")
+                    if r.status_code == 200:
 
-                    with open(zip_file_local_filepath, 'wb') as fd:
-                        fd.write(r.content)
+                        print(f"Download Complete")
+
+                        with open(zip_file_local_filepath, 'wb') as fd:
+                            fd.write(r.content)
+
+                    else:
+                        print("Got an Error Code!")
 
                 else:
                     print("It appears Zip File already exists", zip_file_local_filepath)
@@ -282,7 +287,7 @@ def main(start_year, end_year):
 
 
 if __name__ == "__main__":
-    start_year = 2016
+    start_year = 2020
     end_year = 2022
 
     main(start_year, end_year)
