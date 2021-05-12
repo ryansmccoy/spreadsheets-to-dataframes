@@ -20,18 +20,5 @@ def index():
 
     return render_template("reader.html", df=df.itertuples(), columns_to_display=['published', 'Source', 'Headline'])
 
-@app.route("/")
-def data():
-
-    df = pd.read_csv(r'../data/')
-
-    df['source'] = "prweb"
-
-    df = df.sort_values('published', ascending=False)
-
-    df = df[['published', 'link', 'title','source']]
-
-    return render_template("table.html", df=df.itertuples(), columns_to_display=['published', 'Source', 'Headline'])
-
 if __name__ == "__main__":
     app.run(debug=True)
