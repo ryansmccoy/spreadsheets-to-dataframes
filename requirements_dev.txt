@@ -8,7 +8,7 @@ openpyxl
 cookiecutter
 sqlalchemy
 flask
-
+feedparser
 bs4
 # selenium
 

@@ -15,23 +15,29 @@ pd.set_option('display.width', 600)
 
 current_directory = os.getcwd()
 
-def extract_zip_contents(filepath):
-    z = zipfile.ZipFile(filepath)
 
+def extract_zip_contents(filepath):
     zip_file_local_extract_path = filepath.replace(".zip", "")
 
     # create directory for zip files
     if os.path.exists(zip_file_local_extract_path):
+
         print("Folder already Exists!")
+
     else:
         try:
 
+            z = zipfile.ZipFile(zip_file_local_extract_path)
+
             z.extractall(zip_file_local_extract_path)
+
             print("Extracting Contents: \t", zip_file_local_extract_path)
         except:
             print("Issue Extracting, Going to Skip :)")
+            return None
 
     return zip_file_local_extract_path
+
 
 def download_filings(start_year, end_year, output_directory):
     quarters = ['q1', 'q2', 'q3', 'q4']
@@ -75,8 +81,8 @@ def download_filings(start_year, end_year, output_directory):
 
     return zip_filepaths
 
-def transform_data(numbers_filepath, submissions_filepath, df_sic_list, df_symbol_cik, metric="Revenues", form_type='10-'):
 
+def transform_data(numbers_filepath, submissions_filepath, df_sic_list, df_symbol_cik, metric="Revenues", form_type='10-'):
     print("Transforming ", numbers_filepath)
 
     df_numbers = pd.read_csv(numbers_filepath, delimiter="\t")
@@ -162,8 +168,8 @@ def transform_data(numbers_filepath, submissions_filepath, df_sic_list, df_symbo
 
     return df_values_pct
 
-def filter_ticker_list(df_submissions_symbols):
 
+def filter_ticker_list(df_submissions_symbols):
     pycon_sponsors = [{'symbol': 'GOOG', 'name': 'ALPHABET INC.', 'sponsor_level': 'VISIONARY'},
                       {'symbol': 'AMZN', 'name': 'AMAZON COM INC', 'sponsor_level': 'SUSTAINABILITY'},
                       {'symbol': '#N/A', 'name': 'BLOOMBERG', 'sponsor_level': 'VISIONARY'},
@@ -205,7 +211,6 @@ def filter_ticker_list(df_submissions_symbols):
 
 
 def main(start_year, end_year):
-
     url = 'https://www.sec.gov/include/ticker.txt'
 
     df_symbol_cik = pd.read_csv(url, delimiter="\t", names=['symbol', 'cik'])
@@ -238,7 +243,9 @@ def main(start_year, end_year):
 
     for zip_filepath in zip_filepaths:
         zip_folder = extract_zip_contents(zip_filepath)
-        zip_folders.append(zip_folder)
+
+        if zip_folder:
+            zip_folders.append(zip_folder)
 
     # get list of all extracted files
     files = glob.glob(output_directory + "\\*\\*.*")
@@ -273,8 +280,8 @@ def main(start_year, end_year):
 
         df_all_filings.to_csv('all_filings.csv')
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     start_year = 2016
     end_year = 2022
 
