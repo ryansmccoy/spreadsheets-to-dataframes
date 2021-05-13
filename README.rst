@@ -68,6 +68,9 @@ Section 2 - Real-World Python Example for an Excel User
 
 `02-real-world-example-refactored.py <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/section2-02-real-world-example-refactored.py>`_
 
+Section 2 - Challenge
+~~~~~~~~~~~~~~~~~~~~~~~
+
 `section2_challenge.rst <https://github.com/ryansmccoy/spreadsheets-to-dataframes/blob/master/section2_challenge.rst>`_
 
 
