@@ -4,12 +4,14 @@ From Spreadsheets to DataFrames: Escaping Excel Hell with Python
 
 ==============================================================================================================================================================================
 
-`Presentation given at [STL Python] <https://www.meetup.com/STL-Python/events/265283397>`_
+`Pycon 2021 Tutorial Video [YouTube] - May 12, 2021 <https://www.youtube.com/watch?v=llgTl9BDuKw>`_
 
-`Video Presentation (Short Version) given at Chicago Python Users Group [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
 
-Video Presentation given at Pycon 2021 - May 12, 2021
+Other Presentations:
 
+`STL Python Presentation [YouTube] <https://www.meetup.com/STL-Python/events/265283397>`_
+
+`Chicago Python Users Group [YouTube] <https://www.youtube.com/watch?v=CtN_EVqZ72s>`_
 
 Details
 
