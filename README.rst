@@ -113,6 +113,15 @@ STL Python - Folders
 Quick Start Guides
 ======================
 
+
+`Install Anaconda & Pycharm <https://medium.com/@GalarnykMichael/setting-up-pycharm-with-anaconda-plus-installing-packages-windows-mac-db2b158bd8c>`_
+
+* Anaconda = manages your Python environments
+
+* Pycharm = code editor
+
+`Install Git <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_ - Allows you to git clone/download Github Projects'
+
 Setup Environment & Run Example  (Windows):
 ==================================================
 
